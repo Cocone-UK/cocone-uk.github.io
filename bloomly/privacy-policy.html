@@ -52,11 +52,9 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
 <p>When you register and use Bloomly, you may provide:</p>
 <table>
   <tr><th>Category</th><th>Details</th></tr>
-  <tr><td>Account information</td><td>Username and email address</td></tr>
-  <tr><td>Profile data</td><td>Avatar design choices, in-app preferences</td></tr>
+  <tr><td>Account information</td><td>Email address (via Google or Apple sign-in)</td></tr>
   <tr><td>Journal entries</td><td>Text content you write during journaling sessions</td></tr>
   <tr><td>Survey responses</td><td>Answers to in-app wellness surveys</td></tr>
-  <tr><td>AI companion conversations</td><td>Messages you send to the in-app AI companion ("Domovyk")</td></tr>
   <tr><td>Communications</td><td>Messages you send to our support team</td></tr>
 </table>
 
@@ -71,22 +69,11 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
   <tr><td>Crash and error reports</td><td>Diagnostic data when the Application experiences errors, including breadcrumbs (redacted)</td></tr>
 </table>
 
-<h3>3.3 AI-Derived Data</h3>
-<p>When you interact with the AI companion or complete journaling sessions, our backend systems automatically derive:</p>
-<table>
-  <tr><th>Category</th><th>Details</th></tr>
-  <tr><td>AI memories</td><td>Key facts, preferences, and context extracted from your conversations to personalise future interactions</td></tr>
-  <tr><td>Mood detection</td><td>An inferred mood label attached to each AI response</td></tr>
-  <tr><td>Seeds</td><td>AI-generated summaries, keywords, and mood labels derived from journal entries</td></tr>
-</table>
-<p>These derived data are stored on our servers and used to improve your experience. See Section 4 for legal basis and Section 6 for retention.</p>
-
-<h3>3.4 Information from Third-Party Services</h3>
+<h3>3.3 Information from Third-Party Services</h3>
 <p>We receive data from the following third-party service providers integrated into the Application:</p>
 <table>
   <tr><th>Provider</th><th>Data Received</th><th>Purpose</th></tr>
   <tr><td>Supabase (EU-hosted)</td><td>Authentication tokens, database records</td><td>Backend infrastructure — auth, data storage, edge functions</td></tr>
-  <tr><td>Anthropic (Claude API)</td><td>AI-generated responses based on your messages</td><td>AI companion conversation processing</td></tr>
   <tr><td>Sentry (EU-hosted)</td><td>Crash reports, error logs, diagnostic breadcrumbs</td><td>Application stability and error tracking</td></tr>
   <tr><td>PostHog (EU-hosted)</td><td>Usage events, feature interactions</td><td>Product analytics</td></tr>
   <tr><td>Amplitude (EU-hosted)</td><td>Usage events, session data, device ID</td><td>Product analytics</td></tr>
@@ -95,7 +82,7 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
 </table>
 <p>Each of these providers operates under its own privacy policy. Links are provided in Section 9.</p>
 
-<h3>3.5 Information We Do NOT Collect</h3>
+<h3>3.4 Information We Do NOT Collect</h3>
 <ul>
   <li>Government-issued ID or financial account details</li>
   <li>Precise real-time geolocation (only approximate region derived from IP address)</li>
@@ -112,8 +99,7 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
   <tr><th>Purpose</th><th>Legal Basis (GDPR)</th></tr>
   <tr><td>Providing and maintaining the Application</td><td>Performance of contract (Art. 6(1)(b))</td></tr>
   <tr><td>User account management and authentication</td><td>Performance of contract (Art. 6(1)(b))</td></tr>
-  <tr><td>AI companion conversations and memory personalisation</td><td>Performance of contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Generating journal seeds and mood labels from your entries</td><td>Performance of contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Generating journal seeds from your entries</td><td>Performance of contract (Art. 6(1)(b))</td></tr>
   <tr><td>Analysing app performance and fixing errors</td><td>Legitimate interests — improving service quality (Art. 6(1)(f))</td></tr>
   <tr><td>Understanding how users interact with features (PostHog, Amplitude)</td><td>Legitimate interests — product improvement (Art. 6(1)(f))</td></tr>
   <tr><td>Sending service-related notifications (e.g. updates)</td><td>Performance of contract / Legitimate interests (Art. 6(1)(b)/(f))</td></tr>
@@ -121,7 +107,7 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
   <tr><td>Complying with legal obligations (e.g. tax, fraud prevention)</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
   <tr><td>Protecting Cocone's legal rights</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
 </table>
-<p><strong>AI Processing Detail:</strong> When you send a message to the AI companion, your message and recent conversation history are sent to Anthropic's Claude API for response generation. Anthropic processes this data as a sub-processor under our instructions. Extracted memories and mood labels are stored in our Supabase database and used to personalise future conversations. You can request deletion of AI memories — see Section 10.</p>
+
 
 <h2>5. Cookies and Tracking Technologies</h2>
 <table>
@@ -148,8 +134,7 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
 <p><strong>Service providers (sub-processors):</strong></p>
 <table>
   <tr><th>Provider</th><th>Data Shared</th><th>Purpose</th></tr>
-  <tr><td>Supabase</td><td>Account data, journal entries, AI memories, survey responses</td><td>Backend infrastructure and database</td></tr>
-  <tr><td>Anthropic</td><td>Conversation messages, conversation history, AI memories</td><td>AI companion response generation</td></tr>
+  <tr><td>Supabase</td><td>Account data, journal entries, survey responses</td><td>Backend infrastructure and database</td></tr>
   <tr><td>Sentry</td><td>Error logs, truncated user IDs, diagnostic breadcrumbs</td><td>Crash reporting and error tracking</td></tr>
   <tr><td>PostHog</td><td>Usage events, feature interactions, user ID</td><td>Product analytics</td></tr>
   <tr><td>Amplitude</td><td>Usage events, session data, device ID, user ID</td><td>Product analytics</td></tr>
@@ -169,7 +154,6 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
 <p>Your data may also be transferred to and processed in countries outside the UK and EEA, including:</p>
 <ul>
   <li><strong>Japan</strong> — cocone ONE Corporation (parent company), for operational and reporting purposes</li>
-  <li><strong>United States</strong> — Anthropic (Claude API) for AI companion processing</li>
 </ul>
 <p>When we transfer personal data outside the UK or EEA, we ensure appropriate safeguards are in place, including:</p>
 <ul>
@@ -182,7 +166,6 @@ Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a></p>
 <table>
   <tr><th>Provider</th><th>Privacy Policy</th></tr>
   <tr><td>Supabase</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
-  <tr><td>Anthropic (Claude)</td><td><a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></td></tr>
   <tr><td>Sentry</td><td><a href="https://sentry.io/privacy/">sentry.io/privacy</a></td></tr>
   <tr><td>PostHog</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
   <tr><td>Amplitude</td><td><a href="https://amplitude.com/privacy">amplitude.com/privacy</a></td></tr>
@@ -253,6 +236,9 @@ Attention: Privacy / Data Protection<br>
 Email: <a href="mailto:support_uk@cocone.co.jp">support_uk@cocone.co.jp</a><br>
 Postal Address: 131 Finsbury Pavement, London, England, EC2A 1NT<br>
 Company No.: 16601911</p>
+
+<hr style="margin-top: 40px;">
+<p style="font-size: 13px; color: #666; margin-top: 16px;">See also: <a href="terms-of-service.html">Terms of Service</a></p>
 
 </body>
 </html>
